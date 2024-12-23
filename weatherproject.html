@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="styleproject.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Панель погоды</h1>
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Введите город">
+            <button id="searchButton">Найти</button>
+        </div>
+        <div id="weatherData" class="weather-data">
+            <div class="location">
+                <h2 id="city"></h2>
+                <span id="country"></span>
+            </div>
+            <div class="current-weather">
+                <img id="weatherIcon" src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" alt="Weather Icon" style="width: 60px; height: 60px;">
+                <div class="temperature">
+                    <span id="temperature"></span>
+                    <span id="unit">C</span>
+                </div>
+            </div>
+            <div class="description" id="description"></div>
+            <div class="additional-info">
+                <div>
+                    <span> Влажность:</span>
+                    <span id="humidity"></span>
+                </div>
+                <div>
+                    <span> |Скорость ветра:</span>
+                    <span id="windSpeed"></span>
+                </div>
+                <div>
+                    <span> |Давление:</span>
+                    <span id="pressure"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="projectscript.js"></script>
+</body>
+</html>
